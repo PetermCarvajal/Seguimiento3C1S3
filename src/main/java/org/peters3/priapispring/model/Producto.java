@@ -124,24 +124,24 @@ public class Producto {
 
     // info Obtiene la Fecha Actual del Sistema
 
-    //@Override
-    //public String toString() {
+    @Override
+    public String toString() {
 //
-    //    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-    //    LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
 //
-    //    return String.format("""
-    //            Producto:
-    //    Codigo:  %s
-    //    Nombre: %s
-    //    Provedor: %s
-    //    Descripcion: %s
-    //    Precio: %d
-    //    Stock: %d
-    //    Fecha de Creación: %s
-    //    Fecha de Actualización: %s
-    //    """,codigo, nombre, proveedor, descripcion, precio, stock,
-    //            fechaCreacion != null ? fechaCreacion.format(formatter) : now.format(formatter),
-    //            fechaActualizacion != null ? fechaActualizacion.format(formatter) : now.format(formatter));
-    //}
+        return String.format("""
+                Producto:
+        Codigo:  %s
+        Nombre: %s
+        Provedor: %s
+        Descripcion: %s
+        Precio: %d
+        Stock: %d
+        Fecha de Creación: %s
+        Fecha de Actualización: %s
+        """,codigo, nombre, proveedor, descripcion, precio, stock,
+                fechaCreacion != null ? fechaCreacion.format(formatter) : now.format(formatter),
+                fechaActualizacion != null ? fechaActualizacion.format(formatter) : now.format(formatter));
+    }
 }

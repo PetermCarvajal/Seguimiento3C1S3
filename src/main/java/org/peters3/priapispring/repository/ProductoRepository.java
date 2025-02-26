@@ -14,6 +14,6 @@ List<Producto> findByNombreContainingIgnoreCase(String nombre);
 List<Producto> findByStockGreaterThan(Integer stockMinimo);
 
 // info Metodo Para Buscar Según el provedor
-//List<Producto> findByProveedorContainingIgnoreCase(String proveedor);
+List<Producto> findByProveedorContainingIgnoreCase(String proveedor);
 }
 
